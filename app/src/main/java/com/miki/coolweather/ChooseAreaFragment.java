@@ -9,6 +9,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -216,7 +217,7 @@ public class ChooseAreaFragment extends Fragment {
                             queryProvinces();
                         }else if ("city".equals(type)){
                             queryCities();
-                        }else if ("counry".equals(type)){
+                        }else if ("county".equals(type)){
                             queryCounties();
                         }
                     }
@@ -233,6 +234,7 @@ public class ChooseAreaFragment extends Fragment {
                         Toast.makeText(getContext(), "加载失败", Toast.LENGTH_SHORT).show();
                     }
                 });
+            e.printStackTrace();
             }
         });
     }

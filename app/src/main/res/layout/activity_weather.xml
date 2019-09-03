@@ -30,6 +30,15 @@
                     android:fitsSystemWindows="true">
                     <include layout="@layout/title"/>
                     <include layout="@layout/now"/>
+                    <TextView
+                        android:id="@+id/weather_info_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:text="发布于："
+                        android:textColor="#fff"
+                        android:textSize="15sp"/>
                     <include layout="@layout/forecast"/>
                     <include layout="@layout/aqi"/>
                     <include layout="@layout/suggestion"/>
@@ -41,6 +50,7 @@
             android:name="com.miki.coolweather.ChooseAreaFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="19dp"
             android:layout_gravity="start"/>
     </android.support.v4.widget.DrawerLayout>
 </FrameLayout>
